@@ -9,8 +9,11 @@ public class method8 {
 
         for (int i = 0; i < N; i++) {
             twoD[i][i] = 1;
+            twoD[i][N-1-i] =1;
+
         }
         for (int i = 0; i < N; i++) {
+           // System.out.println("Выполнение when i = " +i);
             for (int j = 0; j < N; j++)
                 System.out.print(twoD[i][j] + " ");
             System.out.println();
